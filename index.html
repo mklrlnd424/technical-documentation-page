@@ -7,7 +7,7 @@
                 }
                 
                 body {
-                font-family: Arial;
+                font-family: sans-serif;
                 padding: 10px;
                 background: #f1f1f1;
                 }
@@ -16,7 +16,7 @@
                 .header {
                 padding: 30px;
                 text-align: center;
-                background: white;
+                background:  rgb(196, 221, 245);
                 }
                 
                 .header h1 {
@@ -46,30 +46,31 @@
                 }
                 
                 /* Create two unequal columns that floats next to each other */
-                /* Left column */
-                .leftcolumn {   
-                float: left;
-                width: 75%;
+                /* right column */
+                .rightcolumn {   
+                float: right;
+                width: 79%;
                 }
                 
-                /* Right column */
-                .rightcolumn {
+                /* left column */
+                .leftcolumn {
                 float: left;
-                width: 25%;
+                width: 20%;
                 background-color: #f1f1f1;
-                padding-left: 20px;
+                padding: 20px 20px 20px 0px;
+                /* position: fixed; */
                 }
                 
                 /* Fake image */
                 .fakeimg {
                 background-color: #aaa;
                 width: 100%;
-                padding: 20px;
+                padding: 20px 20px 20px 20px;
                 }
                 
                 /* Add a card effect for articles */
                 .card {
-                background-color: white;
+                background-color: rgb(196, 221, 245);
                 padding: 20px;
                 margin-top: 20px;
                 }
@@ -93,7 +94,7 @@
                 @media screen and (max-width: 800px) {
                 .leftcolumn, .rightcolumn {   
                     width: 100%;
-                    padding: 0;
+                    /* padding: 10px; */
                 }
                 }
                 
@@ -109,30 +110,62 @@
         <body>
         
         <div class="header">
-            <h1><strong>Planet Girth's</strong> 5 Day Routine </h1>
+            <h1><strong>Planet Girth's</strong> 4 Day Routine </h1>
             <h2><em>Jacked and Tan 2.0</em></h2>
             <p>Your Guide to getting Freakin' <strong>HUGE, THICK, SOLID,</strong> and <strong>Tight.</strong></p>
         </div>
         
-        <div class="topnav">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#" style="float:right">Link</a>
-        </div>
-        
-        
         <div class="row">
             <div class="leftcolumn">
+                <nav class="topnav" id="navbar">
+                    <header>
+                        <a href="#program_description" class="nav-link" id="nav-link">
+                                Program Description
+                        </a>
+                    </header>
+                        <a href="#workout_day_1" class="nav-link" id="nav-link">Workout Day 1</a>
+                        <a href="#workout_day_2" class="nav-link" id="nav-link">Workout Day 2</a>
+                        <a href="#active_recovery_day" class="nav-link" id="nav-link">Active Recovery Day</a>
+                        <a href="#workout_day_3" class="nav-link" id="nav-link">Workout Day 3</a>
+                        <a href="#workout_day_4" class="nav-link" id="nav-link">Workout Day 4</a>  
+                </nav>
+            </div>
+        
+            <div class="rightcolumn">
                 <main id="main-doc">
+                    <div class="card">
+                        <section class="main-section" id="program_description">
+                            <header>Program Description</header>
+                            <p>The contents of this website give a low level overview of the <em>Jacked and Tan 2.0</em> liting program developed by strength and conditioning coach Cody Lefever. For a more comprehensive breakdown of the 
+                                structure and progression of this program, please visit his <a href="http://swoleateveryheight.blogspot.com/2016/07/jacked-tan-20.html">website</a>.</p>
+                            <p><u>Weekly Schedule:</u>4x Weekly training sessions. An upper/lower split with T2 and T3 back work done on either type of day, up to lifter preference. A fifth day is optional.</p>
+                            <br>
+                            <p><u>Day 1:</u> Squat or deadlift variety</p>
+                            <p><u>Day 2:</u> Bench or overhead press variety</p>
+                            <p><u>Day 3:</u> Active recovery day</p>
+                            <p><u>Day 4:</u> Deadlift of squat variety</p>
+                            <p><u>Day 5:</u> Overhead press or bench variety</p>
+                        </section>
+                    </div>
                     <div class="card">
                         <section class="main-section" id="workout_day_1">
                             <header>Workout Day 1</header>
                             <code></code>
-                            <h5>Title description, Dec 7, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <h5>Accomplish 3 Sets of Each</h5>
+                                <li>Back Squat</li>
+                                <li>2" Deficit Deadlift</li>
+                                <li>Single Leg Press</li>
+                                <li>Chest Supported Row</li>
+                                <li>V Grip Cable Row</li>
+                                <li>Leg Curl</li>
+                                <li>Leg Extension</li>
+                                <li>DB Hammer Curl</li>
+                                <br>
+                            <div class="fakeimg">
+                                <iframe width=100% height="315" src="https://www.youtube.com/embed/1oed-UmAxFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                                <p><em>"Get Hard"</em> - David Goggins</p>
+                            <p></p>
                         </section>
                     </div>
                     
@@ -140,10 +173,39 @@
                         <section class="main-section" id="workout_day_2">
                             <header>Workout Day 2</header>
                             <code></code>
-                            <h5>Title description, Dec 7, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <h5>Accomplish 3 Sets of Each</h5>
+                                <li>Bench Press</li>
+                                <li>Close Grip Bench</li>
+                                <li>Incline Bench</li>
+                                <li>DB Shoulder Press</li>
+                                <li>Machine Lateral Raise</li>
+                                <li>Rear Delt Fly</li>
+                                <li>Pec Fly</li>
+                                <li>Cable Tricep Push Down</li>
+                                <br>
+                            <div class="fakeimg">
+                                <iframe width=100% height="315" src="https://www.youtube.com/embed/-MAABwVKxok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p><em>"Get Hard"</em> - David Goggins </p>
+                            <p></p>
+                        </section>
+                    </div>
+
+                    <div class="card">
+                        <section class="main-section" id="active_recovery_day">
+                            <header>Active Recovery Day</header>
+                            <code></code>
+                            <h5>Examples of Active Recovery</h5>
+                                <li>Swimming</li>
+                                <li>Cycling</li>
+                                <li>Jogging</li>
+                                <li>Yoga</li>
+                                <br>
+                            <div class="fakeimg">
+                                <iframe width=100% height="315" src="https://www.youtube.com/embed/GdHW1YipmVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p><em>"Get Hard"</em> - David Goggins</p>
+                            <p></p>
                         </section>
                     </div>
 
@@ -151,10 +213,21 @@
                         <section class="main-section" id="workout_day_3">
                             <header>Workout Day 3</header>
                             <code></code>
-                            <h5>Title description, Dec 7, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <h5>Accomplish 3 Sets of Each</h5>
+                                <li>Front Squat</li>
+                                <li>Back Squat</li>
+                                <li>Back Step Lunge</li>
+                                <li>V Grip Lat Pulldown</li>
+                                <li>Leg Extension</li>
+                                <li>Leg Curl</li>
+                                <li>Wide Grip Lat Pull Down</li>
+                                <li>EZ Bar Curl</li>
+                                <br>
+                            <div class="fakeimg">
+                                <iframe width=100% height="315" src="https://www.youtube.com/embed/wyDbagKS7Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                            </div>
+                            <p><em>"Get Hard"</em> - David Goggins</p>
+                            <p></p>
                         </section>
                     </div>
 
@@ -162,47 +235,29 @@
                         <section class="main-section" id="workout_day_4">
                             <header>Workout Day 4</header>
                             <code></code>
-                            <h5>Title description, Dec 7, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                        </section>
-                    </div>
-
-                    <div class="card">
-                        <section class="main-section" id="workout_day_5">
-                            <header>Workout Day 5</header>
-                            <code></code>
-                            <h5>Title description, Dec 7, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <h5>Accomplish 3 Sets of Each</h5>
+                                <li>Military Press</li>
+                                <li>Sling Shot Bench</li>
+                                <li>Legs Up Bench</li>
+                                <li>Push Press</li>
+                                <li>Cable OH Tricep Ext</li>
+                                <li>Machine Lateral Raise</li>
+                                <li>Rear Delt Fly</li>
+                                <li>Pec Fly</li>
+                                <br>
+                            <div class="fakeimg">
+                                <iframe width=100% height="315" src="https://www.youtube.com/embed/TqslF3XohWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p><em>"Get Hard"</em> - David Goggins</p>
                         </section>
                     </div>
                 </main>
+                
             </div>
-
-            <div class="rightcolumn">
-                <div class="card">
-                    <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                </div>
-                <div class="card">
-                    <h3>Popular Post</h3>
-                    <div class="fakeimg"><p>Image</p></div>
-                    <div class="fakeimg"><p>Image</p></div>
-                    <div class="fakeimg"><p>Image</p></div>
-                </div>
-                <div class="card">
-                    <h3>Follow Me</h3>
-                    <p>Some text..</p>
-                </div>
-            </div>
-        </div>
         
+        </div>
         <div class="footer">
-            <h2>Footer</h2>
+            <h2>This is the footer</h2>
         </div>
             <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         </body>
